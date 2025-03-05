@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Abogados FC - Club Deportivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Navegación -->
+    <nav class="bg-black text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC Logo" class="h-16">
+                    <span class="ml-3 text-xl font-bold">Real Abogados FC</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-red-500 transition duration-300">Inicio</a>
+                    <a href="#nosotros" class="hover:text-red-500 transition duration-300">Nosotros</a>
+                    <a href="#contribuciones" class="hover:text-red-500 transition duration-300">Contribuciones</a>
+                    <a href="#calendario" class="hover:text-red-500 transition duration-300">Calendario</a>
+                    <a href="#galeria" class="hover:text-red-500 transition duration-300">Galería</a>
+                    <a href="#tacticas" class="hover:text-red-500 transition duration-300">Tácticas</a>
+                    <a href="#foro" class="hover:text-red-500 transition duration-300">Foro</a>
+                    <a href="#donaciones" class="hover:text-red-500 transition duration-300">Donaciones</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-4 space-y-1 bg-black">
+                <a href="#inicio" class="block px-3 py-2 hover:bg-red-700 rounded">Inicio</a>
+                <a href="#nosotros" class="block px-3 py-2 hover:bg-red-700 rounded">Nosotros</a>
+                <a href="#contribuciones" class="block px-3 py-2 hover:bg-red-700 rounded">Contribuciones</a>
+                <a href="#calendario" class="block px-3 py-2 hover:bg-red-700 rounded">Calendario</a>
+                <a href="#galeria" class="block px-3 py-2 hover:bg-red-700 rounded">Galería</a>
+                <a href="#tacticas" class="block px-3 py-2 hover:bg-red-700 rounded">Tácticas</a>
+                <a href="#foro" class="block px-3 py-2 hover:bg-red-700 rounded">Foro</a>
+                <a href="#donaciones" class="block px-3 py-2 hover:bg-red-700 rounded">Donaciones</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="relative bg-cover bg-center h-screen flex items-center" style="background-image: url('https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC Logo" class="h-40 mx-auto mb-8 animate-bounce">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Real Abogados FC</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Pasión por el fútbol, compromiso con la comunidad</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#nosotros" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    Conócenos
+                </a>
+                <a href="#calendario" class="bg-white hover:bg-gray-200 text-black font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    Calendario
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Nuestra Iniciativa</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo Real Abogados FC" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold mb-4">Más que un club de fútbol</h3>
+                    <p class="text-gray-700 mb-6">
+                        Real Abogados FC nació con la visión de unir la pasión por el fútbol con el compromiso social. 
+                        Fundado por un grupo de abogados apasionados por el deporte, nuestro club busca fomentar valores 
+                        como el trabajo en equipo, la disciplina y la solidaridad.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Nuestra misión es desarrollar talento deportivo mientras contribuimos positivamente a nuestra 
+                        comunidad, ofreciendo un espacio donde jóvenes y adultos puedan crecer tanto en lo deportivo 
+                        como en lo personal.
+                    </p>
+                    <div class="flex flex-wrap">
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-trophy text-red-600 text-2xl mr-3"></i>
+                                <span class="font-semibold">Excelencia deportiva</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-handshake text-red-600 text-2xl mr-3"></i>
+                                <span class="font-semibold">Compromiso social</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-red-600 text-2xl mr-3"></i>
+                                <span class="font-semibold">Comunidad unida</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-graduation-cap text-red-600 text-2xl mr-3"></i>
+                                <span class="font-semibold">Formación integral</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contribuciones Sociales -->
+    <section id="contribuciones" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Contribuciones Sociales</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    En Real Abogados FC creemos firmemente en retribuir a nuestra comunidad. 
+                    Estas son algunas de nuestras iniciativas sociales más destacadas.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1551280857-2b9bbe52acf4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clínicas deportivas gratuitas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Clínicas deportivas gratuitas</h3>
+                        <p class="text-gray-700">
+                            Ofrecemos clínicas deportivas gratuitas para niños y jóvenes de comunidades vulnerables, 
+                            brindándoles acceso a entrenamiento de calidad y fomentando hábitos saludables.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Asesoría legal comunitaria" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Asesoría legal comunitaria</h3>
+                        <p class="text-gray-700">
+                            Aprovechando la formación de nuestros fundadores, ofrecemos asesoría legal gratuita 
+                            a personas de escasos recursos, ayudándoles a resolver problemas jurídicos básicos.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Torneos benéficos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Torneos benéficos</h3>
+                        <p class="text-gray-700">
+                            Organizamos torneos benéficos cuyos fondos se destinan a causas sociales como 
+                            la mejora de instalaciones deportivas en escuelas públicas y apoyo a familias necesitadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    Ver todas nuestras iniciativas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Calendario -->
+    <section id="calendario" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Calendario de Entrenamientos</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Mantente al día con nuestros horarios de entrenamiento y próximos partidos.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-red-600 text-white p-6">
+                        <h3 class="text-2xl font-bold mb-4">Horarios Semanales</h3>
+                        <p class="mb-6">
+                            Nuestros entrenamientos están diseñados para diferentes categorías y niveles. 
+                            Consulta el horario que corresponde a tu grupo.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-bold">Categorías:</h4>
+                            <ul class="list-disc list-inside">
+                                <li>Infantil (7-12 años)</li>
+                                <li>Juvenil (13-17 años)</li>
+                                <li>Adultos (18+ años)</li>
+                                <li>Veteranos (35+ años)</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="inline-block bg-white text-red-600 font-bold py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+                            Descargar calendario completo
+                        </a>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead>
+                                    <tr class="bg-gray-200">
+                                        <th class="py-3 px-4 text-left">Día</th>
+                                        <th class="py-3 px-4 text-left">Horario</th>
+                                        <th class="py-3 px-4 text-left">Categoría</th>
+                                        <th class="py-3 px-4 text-left">Entrenador</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Lunes</td>
+                                        <td class="py-3 px-4">16:00 - 18:00</td>
+                                        <td class="py-3 px-4">Infantil</td>
+                                        <td class="py-3 px-4">Carlos Méndez</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Lunes</td>
+                                        <td class="py-3 px-4">18:30 - 20:30</td>
+                                        <td class="py-3 px-4">Adultos</td>
+                                        <td class="py-3 px-4">Roberto Sánchez</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Martes</td>
+                                        <td class="py-3 px-4">16:00 - 18:00</td>
+                                        <td class="py-3 px-4">Juvenil</td>
+                                        <td class="py-3 px-4">Ana Martínez</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Miércoles</td>
+                                        <td class="py-3 px-4">16:00 - 18:00</td>
+                                        <td class="py-3 px-4">Infantil</td>
+                                        <td class="py-3 px-4">Carlos Méndez</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Jueves</td>
+                                        <td class="py-3 px-4">16:00 - 18:00</td>
+                                        <td class="py-3 px-4">Juvenil</td>
+                                        <td class="py-3 px-4">Ana Martínez</td>
+                                    </tr>
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4">Viernes</td>
+                                        <td class="py-3 px-4">18:30 - 20:30</td>
+                                        <td class="py-3 px-4">Adultos</td>
+                                        <td class="py-3 px-4">Roberto Sánchez</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4">Sábado</td>
+                                        <td class="py-3 px-4">10:00 - 12:00</td>
+                                        <td class="py-3 px-4">Veteranos</td>
+                                        <td class="py-3 px-4">Miguel Torres</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">Próximos Partidos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-600">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">15 de Mayo, 2025</span>
+                            <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Liga Local</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC" class="h-10 mr-2">
+                                <span class="font-bold">Real Abogados FC</span>
+                            </div>
+                            <span class="text-xl font-bold">VS</span>
+                            <div class="flex items-center">
+                                <span class="font-bold">Deportivo Justicia</span>
+                                <img src="https://placeholder.svg?height=100&width=100" alt="Deportivo Justicia" class="h-10 ml-2">
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-map-marker-alt mr-1"></i> Estadio Municipal, 17:00 hrs
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-600">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">22 de Mayo, 2025</span>
+                            <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Copa Regional</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <img src="https://placeholder.svg?height=100&width=100" alt="Atlético Fiscal" class="h-10 mr-2">
+                                <span class="font-bold">Atlético Fiscal</span>
+                            </div>
+                            <span class="text-xl font-bold">VS</span>
+                            <div class="flex items-center">
+                                <span class="font-bold">Real Abogados FC</span>
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC" class="h-10 ml-2">
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-map-marker-alt mr-1"></i> Estadio La Fiscalía, 16:00 hrs
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-600">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500">29 de Mayo, 2025</span>
+                            <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Liga Local</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC" class="h-10 mr-2">
+                                <span class="font-bold">Real Abogados FC</span>
+                            </div>
+                            <span class="text-xl font-bold">VS</span>
+                            <div class="flex items-center">
+                                <span class="font-bold">Jurídico FC</span>
+                                <img src="https://placeholder.svg?height=100&width=100" alt="Jurídico FC" class="h-10 ml-2">
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-map-marker-alt mr-1"></i> Estadio Municipal, 18:00 hrs
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Galería</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Revive nuestros mejores momentos a través de imágenes y videos.
+                </p>
+            </div>
+            <div class="mb-10">
+                <h3 class="text-2xl font-bold mb-6">Imágenes destacadas</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Partido de liga" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Entrenamiento juvenil" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1551280857-2b9bbe52acf4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1551280857-2b9bbe52acf4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clínica deportiva" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1577223625816-7546f13df25d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Celebración de gol" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipo completo" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Torneo benéfico" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1550881111-7cfde14b8073?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1550881111-7cfde14b8073?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Premiación" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="gallery-item overflow-hidden rounded-lg shadow-lg cursor-pointer" data-img="https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aficionados" class="w-full h-48 object-cover transform transition duration-500 hover:scale-110">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Videos destacados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative pb-[56.25%] h-0">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video destacado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Resumen temporada 2024</h4>
+                            <p class="text-gray-700">Los mejores momentos de nuestra última temporada en la liga local.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative pb-[56.25%] h-0">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video destacado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Clínica deportiva comunitaria</h4>
+                            <p class="text-gray-700">Nuestra última clínica deportiva gratuita para niños de la comunidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para galería -->
+            <div id="gallery-modal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
+                <div class="max-w-4xl mx-auto p-4">
+                    <img id="modal-img" src="/placeholder.svg" alt="Imagen ampliada" class="max-h-[80vh] max-w-full">
+                    <button id="close-modal" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tácticas -->
+    <section id="tacticas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Modelos Tácticos</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Conoce nuestros sistemas de juego y estrategias tácticas que nos han llevado al éxito.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
+                    <h3 class="text-2xl font-bold mb-4">Nuestra filosofía de juego</h3>
+                    <p class="text-gray-700 mb-4">
+                        En Real Abogados FC creemos en un fútbol ofensivo, de posesión y presión alta. 
+                        Nuestro estilo se basa en el control del balón, la creación de espacios y la 
+                        versatilidad táctica para adaptarnos a cada rival.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Trabajamos diferentes sistemas tácticos según la categoría y el nivel de los jugadores, 
+                        pero siempre manteniendo nuestra esencia: juego asociativo, presión tras pérdida y 
+                        transiciones rápidas.
+                    </p>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg mb-3">Principios tácticos fundamentales:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Posesión con propósito y progresión vertical</li>
+                            <li>Presión coordinada tras pérdida</li>
+                            <li>Amplitud en ataque, compacidad en defensa</li>
+                            <li>Superioridades numéricas en zonas clave</li>
+                            <li>Movilidad constante y rotaciones posicionales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+                        <div class="bg-red-600 text-white p-4">
+                            <h4 class="font-bold text-lg">Sistema principal: 4-3-3</h4>
+                        </div>
+                        <div class="p-6">
+                            <div class="relative w-full h-80 bg-green-600 rounded-lg mb-4">
+                                <!-- Campo de fútbol -->
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-3/4 h-3/4 border-2 border-white rounded-lg"></div>
+                                    <div class="absolute w-24 h-24 border-2 border-white rounded-full"></div>
+                                    <div class="absolute top-0 w-1/4 h-1/5 border-2 border-white"></div>
+                                    <div class="absolute bottom-0 w-1/4 h-1/5 border-2 border-white"></div>
+                                </div>
+                                <!-- Jugadores -->
+                                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute bottom-16 left-1/4 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute bottom-16 right-1/4 transform translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute bottom-28 left-1/3 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute bottom-28 right-1/3 transform translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute bottom-40 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute top-28 left-1/4 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute top-28 right-1/4 transform translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute top-28 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute top-16 left-1/3 transform -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                                <div class="absolute top-16 right-1/3 transform translate-x-1/2 w-4 h-4 bg-red-500 rounded-full"></div>
+                            </div>
+                            <p class="text-gray-700">
+                                Nuestro sistema principal favorece la posesión en el medio campo y la creación de 
+                                superioridades por las bandas. Los laterales aportan profundidad mientras que el 
+                                mediocampo controla el ritmo del juego.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="bg-red-600 text-white p-3">
+                                <h4 class="font-bold">Variante 4-4-2</h4>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-gray-700 text-sm">
+                                    Utilizado en situaciones defensivas o contra equipos físicamente superiores.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="bg-red-600 text-white p-3">
+                                <h4 class="font-bold">Variante 3-5-2</h4>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-gray-700 text-sm">
+                                    Para dominar el medio campo y generar superioridades en ataque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Foro -->
+    <section id="foro" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Foro Interactivo</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Únete a nuestra comunidad y participa en las discusiones sobre el club, tácticas, 
+                    partidos y más.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="bg-red-600 text-white p-6">
+                    <h3 class="text-xl font-bold">Temas recientes</h3>
+                </div>
+                <div class="p-6">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="Usuario" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-bold">Análisis del último partido</h4>
+                                <p class="text-sm text-gray-500">Por Juan Pérez, hace 2 días</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            ¿Qué opinan del rendimiento del equipo en el último partido? Creo que la táctica 
+                            funcionó bien pero nos faltó definición en los últimos metros...
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="far fa-comment mr-1"></i> 15 comentarios</span>
+                            <span><i class="far fa-eye mr-1"></i> 87 vistas</span>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Usuario" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-bold">Propuestas para la próxima clínica deportiva</h4>
+                                <p class="text-sm text-gray-500">Por María González, hace 5 días</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Tengo algunas ideas para la próxima clínica deportiva comunitaria. Creo que podríamos 
+                            enfocarla en técnicas de control de balón y pases precisos...
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="far fa-comment mr-1"></i> 23 comentarios</span>
+                            <span><i class="far fa-eye mr-1"></i> 112 vistas</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Usuario" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-bold">Buscamos jugadores para categoría juvenil</h4>
+                                <p class="text-sm text-gray-500">Por Carlos Rodríguez, hace 1 semana</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Estamos buscando nuevos talentos para nuestra categoría juvenil. Si conoces a alguien 
+                            entre 13 y 17 años con pasión por el fútbol, ¡invítalo a nuestras pruebas!
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="far fa-comment mr-1"></i> 8 comentarios</span>
+                            <span><i class="far fa-eye mr-1"></i> 76 vistas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 border-t">
+                    <h3 class="text-xl font-bold mb-4">Participa en nuestro foro</h3>
+                    <form id="forum-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                        </div>
+                        <div>
+                            <label for="topic" class="block text-sm font-medium text-gray-700 mb-1">Tema</label>
+                            <input type="text" id="topic" name="topic" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                            Publicar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Donaciones -->
+    <section id="donaciones" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black mb-4">Apoya Nuestra Causa</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">
+                    Tu donación nos ayuda a mantener nuestras iniciativas sociales y mejorar 
+                    nuestras instalaciones deportivas.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
+                    <h3 class="text-2xl font-bold mb-4">¿Por qué donar?</h3>
+                    <p class="text-gray-700 mb-6">
+                        Cada donación, sin importar su tamaño, tiene un impacto significativo en nuestra comunidad. 
+                        Con tu apoyo podemos:
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Ampliar nuestras clínicas deportivas</h4>
+                                <p class="text-gray-700">Llegar a más niños y jóvenes de comunidades vulnerables.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Mejorar nuestras instalaciones</h4>
+                                <p class="text-gray-700">Contar con mejores espacios para entrenamientos y partidos.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Adquirir equipamiento deportivo</h4>
+                                <p class="text-gray-700">Proporcionar uniformes y materiales a quienes no pueden costearlos.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold">Organizar torneos benéficos</h4>
+                                <p class="text-gray-700">Crear eventos que beneficien a toda la comunidad.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Realiza tu donación</h3>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Selecciona el monto</h4>
+                            <div class="grid grid-cols-3 gap-4 mb-4">
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">$10</button>
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">$25</button>
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">$50</button>
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">$100</button>
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">$200</button>
+                                <button class="donation-btn bg-white hover:bg-red-600 hover:text-white border-2 border-red-600 text-red-600 font-bold py-2 rounded-lg transition duration-300">Otro</button>
+                            </div>
+                            <div id="custom-amount" class="hidden mb-4">
+                                <label for="amount" class="block text-sm font-medium text-gray-700 mb-1">Monto personalizado</label>
+                                <input type="number" id="amount" name="amount" min="1" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Información personal</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="donor-name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                                    <input type="text" id="donor-name" name="donor-name" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                                </div>
+                                <div>
+                                    <label for="donor-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="donor-email" name="donor-email" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                                </div>
+                                <div>
+                                    <label for="donor-phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono (opcional)</label>
+                                    <input type="tel" id="donor-phone" name="donor-phone" class="w-full px-4 py-2 border rounded-lg focus:ring-red-500 focus:border-red-500">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Método de pago</h4>
+                            <div class="flex space-x-4 mb-4">
+                                <button class="payment-method-btn bg-white hover:bg-gray-100 border-2 border-gray-300 p-3 rounded-lg transition duration-300 flex-1 flex items-center justify-center">
+                                    <i class="fab fa-cc-visa text-2xl"></i>
+                                </button>
+                                <button class="payment-method-btn bg-white hover:bg-gray-100 border-2 border-gray-300 p-3 rounded-lg transition duration-300 flex-1 flex items-center justify-center">
+                                    <i class="fab fa-cc-mastercard text-2xl"></i>
+                                </button>
+                                <button class="payment-method-btn bg-white hover:bg-gray-100 border-2 border-gray-300 p-3 rounded-lg transition duration-300 flex-1 flex items-center justify-center">
+                                    <i class="fab fa-paypal text-2xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Completar donación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/86cdf577-b3bb-4002-b465-f8f962c6e553-ECUF57O8JLQWIGuPjSHZRz9A08Dr1l.png" alt="Real Abogados FC Logo" class="h-16 mr-3">
+                        <span class="text-2xl font-bold">Real Abogados FC</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        Pasión por el fútbol, compromiso con la comunidad. Uniendo el deporte 
+                        con la responsabilidad social desde 2015.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Enlaces rápidos</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="text-gray-400 hover:text-red-500 transition duration-300">Inicio</a></li>
+                            <li><a href="#nosotros" class="text-gray-400 hover:text-red-500 transition duration-300">Nosotros</a></li>
+                            <li><a href="#contribuciones" class="text-gray-400 hover:text-red-500 transition duration-300">Contribuciones</a></li>
+                            <li><a href="#calendario" class="text-gray-400 hover:text-red-500 transition duration-300">Calendario</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Recursos</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#galeria" class="text-gray-400 hover:text-red-500 transition duration-300">Galería</a></li>
+                            <li><a href="#tacticas" class="text-gray-400 hover:text-red-500 transition duration-300">Tácticas</a></li>
+                            <li><a href="#foro" class="text-gray-400 hover:text-red-500 transition duration-300">Foro</a></li>
+                            <li><a href="#donaciones" class="text-gray-400 hover:text-red-500 transition duration-300">Donaciones</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                                <span class="text-gray-400">Av. Principal #123, Ciudad</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-red-500 mr-2"></i>
+                                <span class="text-gray-400">+123 456 7890</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-red-500 mr-2"></i>
+                                <span class="text-gray-400">info@realabogadosfc.com</span>
+                            </li>
+                        </ul>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Real Abogados FC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/1234567890" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
